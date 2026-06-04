@@ -1,0 +1,53 @@
+.sec6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: transparent;
+    width: 100%;
+}
+
+.sec6 .menu-bar {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    max-width: 600px;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.sec6 .menu-bar li {
+    font-size: 18px;
+}
+
+.sec6> :nth-child(3) {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    color: black;
+}
+
+@media (max-width: 767px) {
+    .sec6 .menu-bar {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+
+    .sec6 .menu-bar li {
+        font-size: 16px;
+    }
+
+    /* Target the copyright span component dynamically */
+    .sec6> :nth-child(3) {
+        font-size: 12px;
+        margin-top: 25px;
+        padding: 0 10px;
+        line-height: 1.5;
+    }
+}
