@@ -18,11 +18,11 @@
 }
 
 .sec-4-2 {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 400px));
     gap: 40px;
     margin-top: 80px;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .box3 {
@@ -32,6 +32,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    max-width: 400px;
 }
 
 .box3 img {
@@ -52,6 +53,13 @@
     font-size: 28px;
     font-weight: 600;
     text-align: center;
+}
+
+.box3-2 p {
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: left;
 }
 
 .box3-2 .btns {
@@ -93,6 +101,7 @@
     }
 
     .sec-4-2 {
+        grid-template-columns: repeat(2, minmax(260px, 340px));
         margin-top: 60px;
         gap: 35px;
     }
@@ -110,7 +119,9 @@
     }
 
     .sec-4-2 {
+        grid-template-columns: 1fr;
         margin-top: 40px;
+        justify-items: center;
     }
 
     .box3 {
